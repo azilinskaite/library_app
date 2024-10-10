@@ -1,0 +1,1 @@
+Library app project implementing JS constructors, DOM manipulation, etc.

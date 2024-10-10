@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Afacad Flux", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  padding: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid black;
+  h1 {
+    font-size: 4rem;
+  }
+  nav {
+    a {
+      margin-left: 1rem;
+      text-transform: uppercase;
+    }
+    a:hover,
+    a:nth-child(3) {
+      background-color: chartreuse;
+    }
+  }
+}
+
+main {
+  padding: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  .library-area {
+    width: calc(100% - 300px);
+    .library-name {
+      margin-bottom: 1rem;
+    }
+    #books-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      .book-card {
+        border: 1px solid black;
+        padding: 2rem;
+        display: flex;
+        gap: 0.4rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        button {
+          padding: 0.4em 2em;
+          font-family: "Afacad Flux", sans-serif;
+          font-size: 1rem;
+          color: white;
+          background-color: black;
+          border-style: none;
+        }
+        button:hover {
+          filter: brightness(0.6);
+        }
+        button:active {
+          color: black;
+          background-color: white;
+        }
+      }
+    }
+  }
+  #new-book-btn {
+    width: 20rem;
+    height: 2rem;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    border-style: none;
+  }
+  #new-book-btn:hover {
+    filter: brightness(0.6);
+  }
+  #new-book-btn:active {
+    color: black;
+    background-color: white;
+  }
+}
+
+.modal {
+  padding: 1rem;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    fieldset {
+        display: flex;
+        flex-direction: row;
+        gap: 0.4em;
+        border-style: none;
+        margin-bottom: 1em;
+    }
+    .buttons {
+        button {
+            padding: 0.4em 2em;
+            font-family: "Afacad Flux", sans-serif;
+            font-size: 1rem;
+            color: white;
+            background-color: black;
+            border-style: none;
+          }
+          button:hover {
+            filter: brightness(0.6);
+          }
+          button:active {
+            color: black;
+            background-color: white;
+          }
+    }
+  }
+}
