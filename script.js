@@ -23,7 +23,6 @@ Book.prototype.toggleRead = function() {
     this.read = !this.read;
 }
 
-//make toggle work!
 function toggleRead(index) {
     myLibrary[index].toggleRead();
     render();
@@ -72,3 +71,10 @@ document
     event.preventDefault(); //stops form submitting
     addBook();
   });
+
+  //placeholder books for display
+  const placeholderBook1 = new Book("A Little Life", "Hanya Yanagihara", "720", "Read")
+  myLibrary.push(placeholderBook1);
+  const placeholderBook2 = new Book("Just Kids", "Patti Smith", "262", "Read")
+  myLibrary.push(placeholderBook2);
+  render();
