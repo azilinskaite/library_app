@@ -1,1 +1,1 @@
-Library app project implementing JS constructors, DOM manipulation, etc.
+Library web application. Built with JavasCript and CSS. The project leverages JavaScript object-oriented programming, utilizing constructors and implementing dynamic DOM manipulation for a fluid user interface. It features CRUD (Create, Read, Update, Delete) functionality. Implementing responsive design principles
